@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <KakaoSDKAuth/KakaoSDKAuth.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

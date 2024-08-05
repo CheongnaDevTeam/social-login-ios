@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B64D6D7F2472B7C39B9CA40 /* Pods_SocialDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4AED887094E3448D8C227F /* Pods_SocialDemo.framework */; };
 		AF73EBC12C60328700979153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF73EBC02C60328700979153 /* AppDelegate.m */; };
 		AF73EBC42C60328700979153 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF73EBC32C60328700979153 /* SceneDelegate.m */; };
 		AF73EBC72C60328700979153 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF73EBC62C60328700979153 /* ViewController.m */; };
 		AF73EBCC2C60328800979153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF73EBCB2C60328800979153 /* Assets.xcassets */; };
 		AF73EBCF2C60328800979153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF73EBCD2C60328800979153 /* LaunchScreen.storyboard */; };
 		AF73EBD22C60328800979153 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF73EBD12C60328800979153 /* main.m */; };
+		AFF8F7862C60587A009303E9 /* KakaoSDKAuthWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF8F7852C60587A009303E9 /* KakaoSDKAuthWrapper.swift */; };
+		AFF8F7882C60663D009303E9 /* KakaoSDKUserWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF8F7872C60663D009303E9 /* KakaoSDKUserWrapper.swift */; };
+		AFF8F78A2C606C93009303E9 /* KakaoSDKCommonWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF8F7892C606C93009303E9 /* KakaoSDKCommonWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		375D088E348B1D6B66CB9A11 /* Pods-SocialDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDemo.debug.xcconfig"; path = "Target Support Files/Pods-SocialDemo/Pods-SocialDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3C6AC751C5E89E37B3AC8496 /* Pods-SocialDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDemo.release.xcconfig"; path = "Target Support Files/Pods-SocialDemo/Pods-SocialDemo.release.xcconfig"; sourceTree = "<group>"; };
 		AF73EBBC2C60328700979153 /* SocialDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF73EBBF2C60328700979153 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF73EBC02C60328700979153 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,6 +33,12 @@
 		AF73EBCE2C60328800979153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF73EBD02C60328800979153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF73EBD12C60328800979153 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFF8F7842C60587A009303E9 /* SocialDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		AFF8F7852C60587A009303E9 /* KakaoSDKAuthWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSDKAuthWrapper.swift; sourceTree = "<group>"; };
+		AFF8F7872C60663D009303E9 /* KakaoSDKUserWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSDKUserWrapper.swift; sourceTree = "<group>"; };
+		AFF8F7892C606C93009303E9 /* KakaoSDKCommonWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSDKCommonWrapper.swift; sourceTree = "<group>"; };
+		AFF8F78B2C606FA6009303E9 /* env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = env.xcconfig; sourceTree = "<group>"; };
+		DD4AED887094E3448D8C227F /* Pods_SocialDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +46,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B64D6D7F2472B7C39B9CA40 /* Pods_SocialDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2505236D697395B4CA7DA519 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD4AED887094E3448D8C227F /* Pods_SocialDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30618BD91F4F554804E81700 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				375D088E348B1D6B66CB9A11 /* Pods-SocialDemo.debug.xcconfig */,
+				3C6AC751C5E89E37B3AC8496 /* Pods-SocialDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AF73EBB32C60328700979153 = {
 			isa = PBXGroup;
 			children = (
 				AF73EBBE2C60328700979153 /* SocialDemo */,
 				AF73EBBD2C60328700979153 /* Products */,
+				30618BD91F4F554804E81700 /* Pods */,
+				2505236D697395B4CA7DA519 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +91,7 @@
 		AF73EBBE2C60328700979153 /* SocialDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AFF8F7832C605863009303E9 /* ObjcWrappers */,
 				AF73EBBF2C60328700979153 /* AppDelegate.h */,
 				AF73EBC02C60328700979153 /* AppDelegate.m */,
 				AF73EBC22C60328700979153 /* SceneDelegate.h */,
@@ -69,8 +102,20 @@
 				AF73EBCD2C60328800979153 /* LaunchScreen.storyboard */,
 				AF73EBD02C60328800979153 /* Info.plist */,
 				AF73EBD12C60328800979153 /* main.m */,
+				AFF8F78B2C606FA6009303E9 /* env.xcconfig */,
 			);
 			path = SocialDemo;
+			sourceTree = "<group>";
+		};
+		AFF8F7832C605863009303E9 /* ObjcWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				AFF8F7852C60587A009303E9 /* KakaoSDKAuthWrapper.swift */,
+				AFF8F7872C60663D009303E9 /* KakaoSDKUserWrapper.swift */,
+				AFF8F7892C606C93009303E9 /* KakaoSDKCommonWrapper.swift */,
+				AFF8F7842C60587A009303E9 /* SocialDemo-Bridging-Header.h */,
+			);
+			path = ObjcWrappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF73EBD52C60328800979153 /* Build configuration list for PBXNativeTarget "SocialDemo" */;
 			buildPhases = (
+				D9BEC225BC32788857CB9BF3 /* [CP] Check Pods Manifest.lock */,
 				AF73EBB82C60328700979153 /* Sources */,
 				AF73EBB92C60328700979153 /* Frameworks */,
 				AF73EBBA2C60328700979153 /* Resources */,
+				14192A12B7EA4A3D1A6CAA2E /* [CP] Embed Pods Frameworks */,
+				F2F49E7E3A5D68D5562FE5D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -104,6 +152,7 @@
 				TargetAttributes = {
 					AF73EBBB2C60328700979153 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -137,13 +186,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14192A12B7EA4A3D1A6CAA2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialDemo/Pods-SocialDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialDemo/Pods-SocialDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialDemo/Pods-SocialDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9BEC225BC32788857CB9BF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2F49E7E3A5D68D5562FE5D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialDemo/Pods-SocialDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocialDemo/Pods-SocialDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocialDemo/Pods-SocialDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF73EBB82C60328700979153 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AF73EBC72C60328700979153 /* ViewController.m in Sources */,
+				AFF8F78A2C606C93009303E9 /* KakaoSDKCommonWrapper.swift in Sources */,
+				AFF8F7882C60663D009303E9 /* KakaoSDKUserWrapper.swift in Sources */,
 				AF73EBC12C60328700979153 /* AppDelegate.m in Sources */,
+				AFF8F7862C60587A009303E9 /* KakaoSDKAuthWrapper.swift in Sources */,
 				AF73EBD22C60328800979153 /* main.m in Sources */,
 				AF73EBC42C60328700979153 /* SceneDelegate.m in Sources */,
 			);
@@ -281,12 +392,16 @@
 		};
 		AF73EBD62C60328800979153 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 375D088E348B1D6B66CB9A11 /* Pods-SocialDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SWPBG3YXG5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SocialDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -301,19 +416,29 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonbeen.SocialDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialDemo/ObjcWrappers/SocialDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AF73EBD72C60328800979153 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C6AC751C5E89E37B3AC8496 /* Pods-SocialDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SWPBG3YXG5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SocialDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,8 +453,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonbeen.SocialDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialDemo/ObjcWrappers/SocialDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

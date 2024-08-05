@@ -7,6 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "ViewController.h"
+#import "SocialDemo-Swift.h"
 
 @interface SceneDelegate ()
 
@@ -30,6 +31,19 @@
   UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
   self.window.rootViewController = navController;
   [self.window makeKeyAndVisible];
+}
+
+- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {
+  UIOpenURLContext *urlContext = [URLContexts anyObject];
+  if (urlContext) {
+    NSURL *url = urlContext.URL;
+    if ([KakaoSDKAuthWrapper isKakaoTalkLoginUrl:url]) {
+      BOOL success = [KakaoSDKAuthWrapper handleOpenUrlWithUrl:url options:@{}];
+      if (!success) {
+        NSLog(@"URL 처리 실패");
+      }
+    }
+  }
 }
 
 

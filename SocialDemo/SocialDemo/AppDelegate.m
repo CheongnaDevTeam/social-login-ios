@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SocialDemo-Swift.h"
 
 @interface AppDelegate ()
 
@@ -13,9 +14,15 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  // Override point for customization after application launch.
+  NSString *kakaoNativeAppKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"KAKAO_NATIVE_APPKEY"];
+  if (kakaoNativeAppKey) {
+    
+//    [[KakaoSDKCommonWrapper shared] initSDKWithAppKey:@"7406e4b625e29272d35b30edb8436055"];
+    [[KakaoSDKCommonWrapper shared] initSDKWithAppKey:kakaoNativeAppKey];
+  } else {
+    NSLog(@"KAKAO_NATIVE_APPKEY가 지정되지 않았습니다.");
+  }
   return YES;
 }
 
