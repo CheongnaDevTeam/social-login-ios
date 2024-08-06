@@ -92,10 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				AFF8F7832C605863009303E9 /* ObjcWrappers */,
-				AF73EBBF2C60328700979153 /* AppDelegate.h */,
-				AF73EBC02C60328700979153 /* AppDelegate.m */,
-				AF73EBC22C60328700979153 /* SceneDelegate.h */,
-				AF73EBC32C60328700979153 /* SceneDelegate.m */,
+				AF91B84A2C61B5DA00F59944 /* Application */,
 				AF73EBC52C60328700979153 /* ViewController.h */,
 				AF73EBC62C60328700979153 /* ViewController.m */,
 				AF73EBCB2C60328800979153 /* Assets.xcassets */,
@@ -105,6 +102,17 @@
 				AFF8F78B2C606FA6009303E9 /* env.xcconfig */,
 			);
 			path = SocialDemo;
+			sourceTree = "<group>";
+		};
+		AF91B84A2C61B5DA00F59944 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AF73EBBF2C60328700979153 /* AppDelegate.h */,
+				AF73EBC02C60328700979153 /* AppDelegate.m */,
+				AF73EBC22C60328700979153 /* SceneDelegate.h */,
+				AF73EBC32C60328700979153 /* SceneDelegate.m */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		AFF8F7832C605863009303E9 /* ObjcWrappers */ = {
