@@ -22,6 +22,7 @@
 /* Begin PBXFileReference section */
 		375D088E348B1D6B66CB9A11 /* Pods-SocialDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDemo.debug.xcconfig"; path = "Target Support Files/Pods-SocialDemo/Pods-SocialDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		3C6AC751C5E89E37B3AC8496 /* Pods-SocialDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialDemo.release.xcconfig"; path = "Target Support Files/Pods-SocialDemo/Pods-SocialDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AF634F0F2C638B8E004378FC /* env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = env.xcconfig; sourceTree = "<group>"; };
 		AF73EBBC2C60328700979153 /* SocialDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF73EBBF2C60328700979153 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF73EBC02C60328700979153 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		AFF8F7852C60587A009303E9 /* KakaoSDKAuthWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSDKAuthWrapper.swift; sourceTree = "<group>"; };
 		AFF8F7872C60663D009303E9 /* KakaoSDKUserWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSDKUserWrapper.swift; sourceTree = "<group>"; };
 		AFF8F7892C606C93009303E9 /* KakaoSDKCommonWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSDKCommonWrapper.swift; sourceTree = "<group>"; };
-		AFF8F78B2C606FA6009303E9 /* env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = env.xcconfig; sourceTree = "<group>"; };
 		DD4AED887094E3448D8C227F /* Pods_SocialDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,7 +88,7 @@
 				AF73EBCB2C60328800979153 /* Assets.xcassets */,
 				AF73EBCD2C60328800979153 /* LaunchScreen.storyboard */,
 				AF73EBD02C60328800979153 /* Info.plist */,
-				AFF8F78B2C606FA6009303E9 /* env.xcconfig */,
+				AF634F0F2C638B8E004378FC /* env.xcconfig */,
 			);
 			path = Resource;
 			sourceTree = "<group>";

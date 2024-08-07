@@ -68,9 +68,11 @@
 }
 
 - (void)setupButton {
-  self.loginButton = [UIButton buttonWithType:UIButtonTypeSystem];
+  self.loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
   self.loginButton.translatesAutoresizingMaskIntoConstraints = NO;
-  [self.loginButton setTitle:@"카카오로그인" forState:UIControlStateNormal];
+  UIImage *kakaoLoginImage = [UIImage imageNamed:@"kakao_login_button"];
+  [self.loginButton setImage:kakaoLoginImage forState:UIControlStateNormal];
+  self.loginButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
   [self.loginButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
 }
 
